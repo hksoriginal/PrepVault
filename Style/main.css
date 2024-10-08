@@ -198,3 +198,7 @@ h3 {
 .stCheckbox input:checked~.checkmark::after {
     transform: translateX(20px);
 }
+
+.st-image-caption {
+    color: white;
+}
