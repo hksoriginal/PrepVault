@@ -1,5 +1,5 @@
 import streamlit as st
-from Mappers.dl_mapper import ANN_MAPPER, DL_CONCEPTS_MAPPER
+from Mappers.dl_mapper import ANN_MAPPER, CNN_MAPPER, DL_CONCEPTS_MAPPER
 from Utilities.html_element_creator import HTMLElementCreator
 
 
@@ -46,7 +46,7 @@ try:
     st.header("Convolutional Neural Network (CNN)")
     with st.columns([0.05, 0.95])[1]:
         st.markdown("A Convolutional Neural Network (CNN) is a type of ANN primarily used for image processing tasks. It employs convolutional layers that apply filters to input data to detect patterns like edges or textures, followed by pooling layers to reduce the dimensionality. CNNs are highly effective for tasks like image recognition, object detection, and visual data analysis due to their ability to capture spatial features.")
-        for index, (title, value) in enumerate(ANN_MAPPER.items()):
+        for index, (title, value) in enumerate(CNN_MAPPER.items()):
             with st.expander(label=title, expanded=False):
                 st.header(title)
                 html_creator.create_youtube_link_button(

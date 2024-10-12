@@ -5,6 +5,13 @@ from Instructions.Deep_Learning.ANN.ann import ann_markdown_text
 from Instructions.Deep_Learning.Basic_Concepts.optimizers import optimizers_markdown_code
 from Instructions.Deep_Learning.Basic_Concepts.loss_functions import loss_functions_markdown
 from Instructions.Deep_Learning.Basic_Concepts.activation_functions import activation_function_markdown
+from Instructions.Deep_Learning.CNN.cnn import cnn_markdown
+from Instructions.Deep_Learning.CNN.batch_norm import batch_normalization_markdown
+from Instructions.Deep_Learning.CNN.strides import strides_markdown
+from Instructions.Deep_Learning.CNN.pooling import pooling_markdown
+from Instructions.Deep_Learning.CNN.padding import padding_markdown
+from Instructions.Deep_Learning.CNN.dropout import dropout_markdown
+from Instructions.Deep_Learning.CNN.flatten import flatten_markdown
 
 
 DL_CONCEPTS_MAPPER = {
@@ -34,6 +41,7 @@ DL_CONCEPTS_MAPPER = {
             "./Instructions/Deep_Learning/Basic_Concepts/prelu.png",
             "./Instructions/Deep_Learning/Basic_Concepts/ELU.png",
             "./Instructions/Deep_Learning/Basic_Concepts/swish.png",
+            "./Instructions/Deep_Learning/Basic_Concepts/softmax.png",
         ],
         "https://www.youtube.com/results?search_query=activation+functions+in+deep+learning"
     ],
@@ -60,5 +68,44 @@ ANN_MAPPER = {
         ann_markdown_text,
         "./Instructions/Deep_Learning/ANN/ann.png",
         "https://www.youtube.com/results?search_query=ANN+in+deep+learning"
+    ],
+}
+
+
+CNN_MAPPER = {
+    "Convolutional Neural Network (CNN)": [
+        cnn_markdown,
+        "./Instructions/Deep_Learning/CNN/cnn.png",
+        "https://www.youtube.com/results?search_query=CNN++in+deep+learning"
+    ],
+    "Batch Normalization": [
+        batch_normalization_markdown,
+        "./Instructions/Deep_Learning/CNN/batch_norm.png",
+        "https://www.youtube.com/results?search_query=batch+normalization+in+deep+learning"
+    ],
+    "Strides": [
+        strides_markdown,
+        "./Instructions/Deep_Learning/CNN/strides.png",
+        "https://www.youtube.com/results?search_query=stride+in+deep+learning"
+    ],
+    "Pooling": [
+        pooling_markdown,
+        "./Instructions/Deep_Learning/CNN/pooling.png",
+        "https://www.youtube.com/results?search_query=pooling+in+deep+learning"
+    ],
+    "Padding": [
+        padding_markdown,
+        "./Instructions/Deep_Learning/CNN/padding.png",
+        "https://www.youtube.com/results?search_query=padding+in+deep+learning"
+    ],
+    "Dropout": [
+        dropout_markdown,
+        "./Instructions/Deep_Learning/CNN/dropout.png",
+        "https://www.youtube.com/results?search_query=dropout+in+deep+learning"
+    ],
+    "Flatten": [
+        flatten_markdown,
+        "./Instructions/Deep_Learning/CNN/flatten.png",
+        "https://www.youtube.com/results?search_query=flatten+in+deep+learning"
     ],
 }
