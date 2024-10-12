@@ -26,7 +26,7 @@ try:
                     if len(value[1]) >= 1:
                         for image_path in value[1]:
                             st.image(image=image_path,
-                                     caption=image_path.split('/')[-1])
+                                     caption=(image_path.split('/')[-1].split(".")[0]).capitalize())
                 st.markdown(value[0])
 
     # 1
