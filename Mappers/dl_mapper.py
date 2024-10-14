@@ -12,6 +12,11 @@ from Instructions.Deep_Learning.CNN.pooling import pooling_markdown
 from Instructions.Deep_Learning.CNN.padding import padding_markdown
 from Instructions.Deep_Learning.CNN.dropout import dropout_markdown
 from Instructions.Deep_Learning.CNN.flatten import flatten_markdown
+from Instructions.Deep_Learning.RNN.rnn import rnn_explanation
+from Instructions.Deep_Learning.RNN.lstm import lstm_explanation
+from Instructions.Deep_Learning.RNN.gru import gru_markdown
+from Instructions.Deep_Learning.TRANSFORMERS.transformers import transformer_architecture_markdown
+from Instructions.Deep_Learning.TRANSFORMERS.encoder_decoder import enoder_decoder_markdown_code
 
 
 DL_CONCEPTS_MAPPER = {
@@ -107,5 +112,42 @@ CNN_MAPPER = {
         flatten_markdown,
         "./Instructions/Deep_Learning/CNN/flatten.png",
         "https://www.youtube.com/results?search_query=flatten+in+deep+learning"
+    ],
+}
+
+RNN_MAPPER = {
+    "Recurrent Neural Network (RNN)": [
+        rnn_explanation,
+        "./Instructions/Deep_Learning/RNN/rnn.png",
+        "https://www.youtube.com/results?search_query=RNN+in+deep+learning"
+    ],
+    "Long Short-Term Memory (LSTM)": [
+        lstm_explanation,
+        "./Instructions/Deep_Learning/RNN/rnn.png",
+        "https://www.youtube.com/results?search_query=LSTM+in+deep+learning"
+    ],
+    "Gated Recurrent Units (GRU)": [
+        gru_markdown,
+        "./Instructions/Deep_Learning/RNN/gru.png",
+        "https://www.youtube.com/results?search_query=GRU+in+deep+learning"
+    ],
+}
+
+
+TRANSFORMERS_MAPPER = {
+    "Transformers": [
+        transformer_architecture_markdown,
+        "./Instructions/Deep_Learning/TRANSFORMERS/transformers.png",
+        "https://www.youtube.com/results?search_query=RNN+in+deep+learning"
+    ],
+    "Attention": [
+        enoder_decoder_markdown_code,
+        "./Instructions/Deep_Learning/TRANSFORMERS/encoder_decoder.png",
+        "https://www.youtube.com/results?search_query=encoder+and+decoder+in+transformer+"
+    ],
+    "Encoder Decoder": [
+        enoder_decoder_markdown_code,
+        "./Instructions/Deep_Learning/TRANSFORMERS/encoder_decoder.png",
+        "https://www.youtube.com/results?search_query=encoder+and+decoder+in+transformer+"
     ],
 }
