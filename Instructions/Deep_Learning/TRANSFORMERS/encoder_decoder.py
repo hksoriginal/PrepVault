@@ -1,4 +1,4 @@
-enoder_decoder_markdown_code = r"""
+encoder_decoder_markdown_code = r"""
 # Encoder-Decoder Architecture in Transformers
 
 ## Overview
@@ -156,9 +156,11 @@ The attention mechanism is central to the transformer's ability to model relatio
 
 1. **Scaled Dot-Product Attention**: Computes attention scores by taking the dot product of queries (Q) and keys (K), scaling them by the square root of their dimension, applying a softmax function to get attention weights, and then combining these weights with values (V).
 
-   \[
+   $$ 
+   
    \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-   \]
+   
+   $$
 
 2. **Multi-Head Attention**: Instead of performing a single attention function, the transformer computes multiple sets of attention in parallel (heads), allowing the model to learn different representations at different positions.
 
@@ -168,12 +170,12 @@ Since the transformer architecture does not have recurrence or convolution, it r
 
 ### Positional Encoding Formula:
 
-\[
+$$
 PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{\frac{2i}{d_{model}}}}\right)
-\]
-\[
+$$
+$$
 PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{\frac{2i}{d_{model}}}}\right)
-\]
+$$
 
 where \(pos\) is the position and \(i\) is the dimension index.
 

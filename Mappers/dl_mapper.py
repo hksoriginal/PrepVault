@@ -16,8 +16,8 @@ from Instructions.Deep_Learning.RNN.rnn import rnn_explanation
 from Instructions.Deep_Learning.RNN.lstm import lstm_explanation
 from Instructions.Deep_Learning.RNN.gru import gru_markdown
 from Instructions.Deep_Learning.TRANSFORMERS.transformers import transformer_architecture_markdown
-from Instructions.Deep_Learning.TRANSFORMERS.encoder_decoder import enoder_decoder_markdown_code
-
+from Instructions.Deep_Learning.TRANSFORMERS.encoder_decoder import encoder_decoder_markdown_code
+from Instructions.Deep_Learning.TRANSFORMERS.attention import attention_mechanism
 
 DL_CONCEPTS_MAPPER = {
     "Optimizers": [
@@ -141,13 +141,22 @@ TRANSFORMERS_MAPPER = {
         "https://www.youtube.com/results?search_query=RNN+in+deep+learning"
     ],
     "Attention": [
-        enoder_decoder_markdown_code,
+        attention_mechanism,
+        "./Instructions/Deep_Learning/TRANSFORMERS/attention.png",
+        "https://www.youtube.com/results?search_query=attention+in+transformer+"
+    ],
+    "Encoder Decoder": [
+        encoder_decoder_markdown_code,
         "./Instructions/Deep_Learning/TRANSFORMERS/encoder_decoder.png",
         "https://www.youtube.com/results?search_query=encoder+and+decoder+in+transformer+"
     ],
-    "Encoder Decoder": [
-        enoder_decoder_markdown_code,
-        "./Instructions/Deep_Learning/TRANSFORMERS/encoder_decoder.png",
-        "https://www.youtube.com/results?search_query=encoder+and+decoder+in+transformer+"
+}
+
+
+TRANSFORMERS_MAPPER = {
+    "Transformers": [
+        transformer_architecture_markdown,
+        "./Instructions/Deep_Learning/TRANSFORMERS/transformers.png",
+        "https://www.youtube.com/results?search_query=RNN+in+deep+learning"
     ],
 }
