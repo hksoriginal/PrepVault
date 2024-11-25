@@ -16,7 +16,7 @@ css_file_path = "Style/main.css"
 with open(css_file_path) as css:
     st.markdown(f"<style>{css.read()}</style", unsafe_allow_html=True)
 
-st.markdown("# PrepVault -  Comprehensive Prepration Vault")
+st.markdown("# PrepVault -  Comprehensive Preparation Vault")
 
 
 placeholder = st.empty()
