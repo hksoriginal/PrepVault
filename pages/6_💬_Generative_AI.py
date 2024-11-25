@@ -2,7 +2,11 @@ import streamlit as st
 from Mappers.gen_ai_mapper import GENAI_MAPPER
 from Utilities.html_element_creator import HTMLElementCreator
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="Generative AI",
+    page_icon="💬",
+    layout="wide",
+)
 
 html_creator = HTMLElementCreator()
 css_file_path = "Style/main.css"
