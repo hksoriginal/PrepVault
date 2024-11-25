@@ -395,6 +395,53 @@ Imagine you’re teaching a friend how to bake a cake. You’d give them step-by
 
 Prompt Engineering has gained significant attention since the launch of ChatGPT in late 2022.
 
+## What is LLM?
+
+LLM stands for large language model. It refers to a type of artificial intelligence (AI) model that uses natural language processing (NLP) techniques to generate text or complete tasks based on input data. LLMs have gained popularity in recent years due to their ability to generate human-like text and perform complex tasks with high accuracy. They are often used for applications such as predictive typing, language translation, and content creation. 
+
+However, LLMs have also been criticized for their potential to perpetuate bias and misinformation if not trained and monitored properly. As a result, prompt engineering has become an essential aspect of LLM development to ensure responsible and ethical use of these powerful tools. Overall, LLMs are a promising technology with the potential to revolutionize various industries, but it is crucial to prioritize prompt engineering and ethical considerations in their implementation.
+
+## What are language models?
+
+Language modeling (LM) is a type of artificial intelligence that helps computers understand and interpret human language. They use statistical techniques to analyze large amounts of text data, learn patterns and relationships between words, and then generate new sentences or even entire documents based on this knowledge.
+
+It is widely used in artificial intelligence (AI) and natural language processing (NLP), natural language understanding, and natural language generation systems. You’ll find it in things like text generation, machine translation, and question answering.
+
+Moreover, large language models (LLMs) also leverage language modeling. These sophisticated language models, such as OpenAI’s GPT-3 and Google’s Palm 2, proficiently manage billions of training data parameters and produce remarkable text outputs.
+
+Language models have become an integral part of many applications such as voice assistants, machine translation, and chatbots. They continue to evolve and improve, making them a valuable tool for various industries including education, healthcare, and business.
+
+## What are natural language processing models?
+
+Natural language processing (NLP) models are computer algorithms that are designed to understand and process human language. These models use machine learning techniques to analyze text, extract relevant information, and make predictions or decisions based on the input data. NLP models can perform a wide range of tasks, such as language translation, sentiment analysis, chatbot interactions, and more. They are becoming increasingly important in today’s world as the amount of data and text-based communication continues to grow.
+
+## How do NLP models work?
+
+NLP models work by breaking down human language into smaller, more manageable components that can be understood and processed by computers. These components may include words, sentences, phrases, or even entire documents. The model uses various techniques, such as statistical methods, rule-based systems, or deep learning algorithms to analyze the input data and extract meaningful information. This information can then be used to perform specific tasks or make decisions based on the desired outcome.
+
+NLP models are constantly evolving and improving as researchers continue to explore new techniques and approaches for understanding language. Overall, these models play a crucial role in enabling computers to communicate and interact with humans in a more natural and efficient way.
+
+## What are the potential applications of NLP models?
+
+As mentioned earlier, NLP models have a wide range of potential applications in various industries and fields. Some examples include:
+
+- **Language translation**: NLP models can be used to translate text from one language to another, making it easier for people who speak different languages to communicate with each other.
+- **Sentiment analysis**: NLP models can analyze text to determine the sentiment, or overall emotion, of the writer. This is particularly useful for companies who want to understand how their customers feel about their products or services.
+- **Chatbot interactions**: NLP models are often used in chatbots, which are computer programs designed to simulate conversation with human users. These models allow chatbots to understand and respond to user input in a more human-like manner.
+- **Text summarization**: NLP models can be used to automatically generate summaries of longer texts, making it easier for people to quickly grasp the main ideas or key points.
+- **Information retrieval**: NLP models can help search engines retrieve relevant information from large databases or documents based on a user’s query.
+- **Voice assistants**: NLP models are also used in voice assistants, such as Siri or Alexa, to understand and respond to voice commands from users.
+
+## What are the limitations of NLP models?
+
+While NLP models have many potential applications, there are also some limitations to be aware of. Some common challenges include:
+
+- **Ambiguity in language**: Human language is often ambiguous, and NLP models can struggle to accurately interpret the intended meaning of a sentence or phrase.
+- **Lack of context**: NLP models may not be able to understand the context in which a word or phrase is being used, leading to incorrect interpretations.
+- **Bias in training data**: NLP models are only as good as the data they are trained on. If the training data is biased, the model may produce biased or discriminatory results.
+- **Difficulty with slang and informal language**: NLP models are typically trained on formal, grammatically correct language. This means they may struggle to understand and accurately process slang, colloquialisms, and other forms of informal language.
+
+
 ## What Does A Prompt Engineer Do?
 A prompt engineer plays a crucial role in developing and optimizing AI-generated text prompts. They are responsible for making sure these prompts are accurate and relevant across different applications, fine-tuning them meticulously for the best performance. This emerging job is gaining traction in various industries as organizations realize the importance of crafting engaging and contextually appropriate prompts to improve user experiences and achieve better results.
 
