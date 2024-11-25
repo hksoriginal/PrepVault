@@ -8,8 +8,7 @@ import streamlit.components.v1 as components
 
 
 st.set_page_config(
-    page_title="TeamVault",
-    page_icon="tv_fav_icon.png",
+    page_title="Prepvault",
     layout="wide",
 )
 
