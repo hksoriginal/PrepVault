@@ -7,7 +7,11 @@ from Instructions.Machine_Learning.Supervised.Regression.reg_evaluation_metrices
 from Instructions.Machine_Learning.Unsupervised.Clustering.clus_evaluation_metrices import clustering_evaluation_metrices
 
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="Machine Learning",
+    page_icon="🤖",
+    layout="wide",
+)
 
 html_creator = HTMLElementCreator()
 css_file_path = "Style/main.css"

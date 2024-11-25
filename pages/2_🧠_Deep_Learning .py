@@ -3,7 +3,11 @@ from Mappers.dl_mapper import ANN_MAPPER, CNN_MAPPER, DL_CONCEPTS_MAPPER, RNN_MA
 from Utilities.html_element_creator import HTMLElementCreator
 
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="Deep Learning",
+    page_icon="🧠",
+    layout="wide",
+)
 
 html_creator = HTMLElementCreator()
 css_file_path = "Style/main.css"

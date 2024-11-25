@@ -148,3 +148,21 @@ class HTMLElementCreator:
             + f'<a href="{url}" target="_blank"><button class="button"><img src="{youtube_icon}" class="youtube-icon">{label}</button></a>',
             unsafe_allow_html=True,
         )
+
+    def create_github_card(self, repo_url, title):
+        owner, repo = repo_url.split("/")[-2], repo_url.split("/")[-1]
+        
+        card_html = f"""
+        <div style="border:1px solid #444; border-radius:10px; padding:20px; width:auto; height:auto; text-align:center, margin:20px; background-color:#1e1e1e; color:#f1f1f1;">
+            <h4 style="color:#aaaaaa;">{title}</h4>
+            <h3 style="color:#4CAF50;">{repo}</h3>
+            <h3 style="color:#cccccc;">{owner}</h3>
+            <a href="{repo_url}" target="_blank" style="text-decoration:none;">
+                <button style="background-color:#4CAF50; color:white; border:none; border-radius:5px; padding:10px 15px; cursor:pointer;">
+                    Visit Repository
+                </button>
+            </a>
+        </div>
+        """
+
+        st.markdown(card_html, unsafe_allow_html=True)

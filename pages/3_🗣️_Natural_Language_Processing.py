@@ -43,7 +43,6 @@ try:
                     st.image(image=value[1])
                 st.markdown(value[0], unsafe_allow_html=True)
 
- 
 
 except Exception as e:
     st.markdown("# Check Instruction File")
