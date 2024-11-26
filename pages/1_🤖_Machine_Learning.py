@@ -41,6 +41,7 @@ try:
                     with st.columns([0.6, 0.4])[0]:
                         st.image(image=value[1])
                     st.markdown(value[0])
+    
 
         if st.toggle("Regression", key=12):
             st.header("Regression")
