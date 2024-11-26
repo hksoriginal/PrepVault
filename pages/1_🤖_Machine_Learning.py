@@ -1,4 +1,5 @@
 import streamlit as st
+from Instructions.Machine_Learning.st_interview_q import ML_INTERVIEW_Q
 from Utilities.html_element_creator import HTMLElementCreator
 from Mappers.ml_mapper import SML_CLS_MAPPER, SML_REG_MAPPER, USML_ANADET_MAPPER, USML_CLUS_MAPPER, USML_DIMRED_MAPPER
 
@@ -41,7 +42,6 @@ try:
                     with st.columns([0.6, 0.4])[0]:
                         st.image(image=value[1])
                     st.markdown(value[0])
-    
 
         if st.toggle("Regression", key=12):
             st.header("Regression")
@@ -104,7 +104,9 @@ try:
     st.header("Reinforcement Learning")
     with st.columns([0.05, 0.95])[1]:
         st.markdown("Reinforcement Learning is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives rewards or penalties based on its actions, and its goal is to maximize its cumulative reward over time.")
-
+    st.divider()
+    with st.expander("Interview Questions"):
+        st.markdown(ML_INTERVIEW_Q)
 
 except Exception as e:
     st.markdown("# Check Instruction File")
