@@ -87,6 +87,7 @@ try:
 
     st.divider()
     with st.expander("Interview Questions"):
+        st.image('./Instructions/Deep_Learning/dl_int.png')
         st.markdown(DL_INTERVIEW_Q)
 
 except Exception as e:

@@ -106,6 +106,7 @@ try:
         st.markdown("Reinforcement Learning is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives rewards or penalties based on its actions, and its goal is to maximize its cumulative reward over time.")
     st.divider()
     with st.expander("Interview Questions"):
+        st.image("./Instructions/Machine_Learning/ml_int.png")
         st.markdown(ML_INTERVIEW_Q)
 
 except Exception as e:

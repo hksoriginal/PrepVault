@@ -46,6 +46,7 @@ try:
     
     st.divider()
     with st.expander("Interview Questions"):
+        st.image('./Instructions/NLP/nlp_int.png')
         st.markdown(NLP_INTERVIEW_Q)
 
 
