@@ -1,4 +1,5 @@
 import streamlit as st
+from Instructions.Deep_Learning.dl_interview_q import DL_INTERVIEW_Q
 from Mappers.dl_mapper import ANN_MAPPER, CNN_MAPPER, DL_CONCEPTS_MAPPER, RNN_MAPPER, TRANSFORMERS_MAPPER
 from Utilities.html_element_creator import HTMLElementCreator
 
@@ -83,6 +84,10 @@ try:
                 with st.columns([0.6, 0.4])[0]:
                     st.image(image=value[1])
                 st.markdown(value[0], unsafe_allow_html=True)
+
+    st.divider()
+    with st.expander("Interview Questions"):
+        st.markdown(DL_INTERVIEW_Q)
 
 except Exception as e:
     st.markdown("# Check Instruction File")

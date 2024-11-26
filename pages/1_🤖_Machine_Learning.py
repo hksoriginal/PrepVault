@@ -1,5 +1,5 @@
 import streamlit as st
-from Instructions.Machine_Learning.st_interview_q import ML_INTERVIEW_Q
+from Instructions.Machine_Learning.ml_interview_q import ML_INTERVIEW_Q
 from Utilities.html_element_creator import HTMLElementCreator
 from Mappers.ml_mapper import SML_CLS_MAPPER, SML_REG_MAPPER, USML_ANADET_MAPPER, USML_CLUS_MAPPER, USML_DIMRED_MAPPER
 

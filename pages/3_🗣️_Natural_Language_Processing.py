@@ -1,4 +1,5 @@
 import streamlit as st
+from Instructions.NLP.nlp_interview_q import NLP_INTERVIEW_Q
 from Mappers.nlp_mapper import NLP_CONCEPTS_MAPPER, BERT_MAPPER
 from Utilities.html_element_creator import HTMLElementCreator
 
@@ -42,6 +43,10 @@ try:
                 with st.columns([0.6, 0.4])[0]:
                     st.image(image=value[1])
                 st.markdown(value[0], unsafe_allow_html=True)
+    
+    st.divider()
+    with st.expander("Interview Questions"):
+        st.markdown(NLP_INTERVIEW_Q)
 
 
 except Exception as e:
