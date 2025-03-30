@@ -2,9 +2,6 @@
 from Mappers.documentation_mapper import DOCUMENTATION_MAPPER
 from Utilities.html_element_creator import HTMLElementCreator
 import streamlit as st
-import streamlit.components.v1 as components
-
-
 
 
 st.set_page_config(
