@@ -21,7 +21,6 @@ try:
     with dl_tabs[0]:
         st.header("Deep Learning Concepts")
         with st.columns([0.05, 0.95])[1]:
-            st.markdown("Common DL Concepts")
             for index, (title, value) in enumerate(DL_CONCEPTS_MAPPER.items()):
                 with st.expander(label=title, expanded=False):
                     st.header(title)
