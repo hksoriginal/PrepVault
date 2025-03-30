@@ -21,29 +21,32 @@ html_creator = HTMLElementCreator()
 
 st.header("Classical Machine Learning")
 
-ml_tabs = st.tabs(['Supervised','Unsupervised','Reinforcement','Interview Questions'])
+ml_tabs = st.tabs(['Supervised', 'Unsupervised',
+                  'Reinforcement', 'Interview Questions'])
 try:
     with ml_tabs[0]:
         st.header("Supervised Learning")
         st.markdown("In supervised learning, the model is trained on a labeled dataset, which means that the input data is paired with the correct output. The goal is to learn a mapping from inputs to outputs.")
-        sl_tabs = st.tabs(['Classification','Regression'])
+        sl_tabs = st.tabs(['Classification', 'Regression'])
         with st.columns([0.05, 0.95])[1]:
-            
+
             with sl_tabs[0]:
                 st.header("Classification")
                 st.markdown(
                     'Classification involves predicting categorical labels for new instances based on learned patterns from a labeled dataset.')
-                if st.toggle("Evaluation Metrices for Classification"):
+                sl_cl_tabs = st.tabs(['Evaluation Metrices', 'Algorithms'])
+                with sl_cl_tabs[0]:
                     st.markdown(classification_evaluation_metrics)
-                for index, (title, value) in enumerate(SML_CLS_MAPPER.items()):
+                with sl_cl_tabs[1]:
+                    for index, (title, value) in enumerate(SML_CLS_MAPPER.items()):
 
-                    with st.expander(label=title, expanded=False):
-                        st.header(title)
-                        html_creator.create_youtube_link_button(
-                            label=title, url=value[2])
-                        with st.columns([0.6, 0.4])[0]:
-                            st.image(image=value[1])
-                        st.markdown(value[0])
+                        with st.expander(label=title, expanded=False):
+                            st.header(title)
+                            html_creator.create_youtube_link_button(
+                                label=title, url=value[2])
+                            with st.columns([0.6, 0.4])[0]:
+                                st.image(image=value[1])
+                            st.markdown(value[0])
 
             with sl_tabs[1]:
                 st.header("Regression")
