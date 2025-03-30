@@ -51,16 +51,19 @@ try:
             with sl_tabs[1]:
                 st.header("Regression")
                 st.markdown("Regression predicts continuous numerical values based on input features. The model learns the relationship between the input variables and a continuous output variable")
-                if st.toggle("Evaluation Metrices for Regression"):
+                sl_reg_tabs = st.tabs(['Evaluation Metrices', 'Algorithms'])
+                with sl_reg_tabs[0]:
                     st.markdown(regression_evaluation_metrices)
-                for index, (title, value) in enumerate(SML_REG_MAPPER.items()):
-                    with st.expander(label=title, expanded=False):
-                        st.header(title)
-                        html_creator.create_youtube_link_button(
-                            label=title, url=value[2])
-                        with st.columns([0.6, 0.4])[0]:
-                            st.image(image=value[1])
-                        st.markdown(value[0])
+                
+                with sl_reg_tabs[1]:
+                    for index, (title, value) in enumerate(SML_REG_MAPPER.items()):
+                        with st.expander(label=title, expanded=False):
+                            st.header(title)
+                            html_creator.create_youtube_link_button(
+                                label=title, url=value[2])
+                            with st.columns([0.6, 0.4])[0]:
+                                st.image(image=value[1])
+                            st.markdown(value[0])
 
     with ml_tabs[1]:
         st.header("Unsupervised Learning")
