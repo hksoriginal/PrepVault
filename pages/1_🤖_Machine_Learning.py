@@ -69,7 +69,8 @@ try:
         st.header("Unsupervised Learning")
         with st.columns([0.05, 0.95])[1]:
             st.markdown("Unsupervised Learning is a type of machine learning where the algorithm learns from unlabeled data. Unlike supervised learning,which requires labeled data to train the model, unsupervised learning finds patterns, structures, or relationships within the data itself.")
-            if st.toggle("Clustering", key=21):
+            usl_tabs = st.tabs(['Clustering','Dimensionality Reduction','Anomaly Detection'])
+            with usl_tabs[0]:
                 st.header("Clustering")
                 st.markdown(
                     'Clustering is an unsupervised learning technique that groups similar data points together based on their features. The goal is to identify distinct groups (clusters) in the data without prior labels.')
@@ -84,7 +85,7 @@ try:
                             st.image(image=value[1])
                         st.markdown(value[0])
 
-            if st.toggle("Dimensionality Reduction", key=22):
+            with usl_tabs[1]:
                 st.header("Dimensionality Reduction")
                 st.markdown("Dimensionality reduction reduces the number of features (dimensions) in a dataset while retaining essential information. This is useful for simplifying data, visualizing high-dimensional data, and improving computational efficiency. ")
                 for index, (title, value) in enumerate(USML_DIMRED_MAPPER.items()):
@@ -96,7 +97,7 @@ try:
                             st.image(image=value[1])
                         st.markdown(value[0])
 
-            if st.toggle("Anomaly Detection", key=23):
+            with usl_tabs[2]:
                 st.header("Anomaly Detection")
                 st.markdown("Anomaly detection identifies rare or unusual observations in a dataset that deviate significantly from the norm. This technique is valuable for spotting outliers that may indicate fraud, errors, or other significant events. ")
                 for index, (title, value) in enumerate(USML_ANADET_MAPPER.items()):
