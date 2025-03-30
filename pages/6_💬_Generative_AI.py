@@ -16,8 +16,9 @@ html_creator = HTMLElementCreator()
 
 try:
     st.markdown("## Generative AI")
+    gen_ai_tabs = st.tabs(GENAI_MAPPER.keys())
     for index, (title, value) in enumerate(GENAI_MAPPER.items()):
-        with st.expander(label=title, expanded=False):
+        with gen_ai_tabs[index]:
             st.image(value[1])
             st.markdown(value[0])
 
