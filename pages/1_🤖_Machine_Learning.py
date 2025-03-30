@@ -15,9 +15,9 @@ st.set_page_config(
 )
 
 html_creator = HTMLElementCreator()
-# css_file_path = "Style/main.css"
-# with open(css_file_path) as css:
-#     st.markdown(f"<style>{css.read()}</style", unsafe_allow_html=True)
+css_file_path = "Style/main.css"
+with open(css_file_path) as css:
+    st.markdown(f"<style>{css.read()}</style", unsafe_allow_html=True)
 
 st.header("Classical Machine Learning")
 
@@ -25,10 +25,10 @@ ml_tabs = st.tabs(['Supervised', 'Unsupervised',
                   'Reinforcement', 'Interview Questions'])
 try:
     with ml_tabs[0]:
-        st.header("Supervised Learning")
-        st.markdown("In supervised learning, the model is trained on a labeled dataset, which means that the input data is paired with the correct output. The goal is to learn a mapping from inputs to outputs.")
-        sl_tabs = st.tabs(['Classification', 'Regression'])
         with st.columns([0.05, 0.95])[1]:
+            st.header("Supervised Learning")
+            st.markdown("In supervised learning, the model is trained on a labeled dataset, which means that the input data is paired with the correct output. The goal is to learn a mapping from inputs to outputs.")
+            sl_tabs = st.tabs(['Classification', 'Regression'])
 
             with sl_tabs[0]:
                 st.header("Classification")
