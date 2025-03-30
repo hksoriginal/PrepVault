@@ -54,7 +54,7 @@ try:
                 sl_reg_tabs = st.tabs(['Evaluation Metrices', 'Algorithms'])
                 with sl_reg_tabs[0]:
                     st.markdown(regression_evaluation_metrices)
-                
+
                 with sl_reg_tabs[1]:
                     for index, (title, value) in enumerate(SML_REG_MAPPER.items()):
                         with st.expander(label=title, expanded=False):
@@ -69,21 +69,24 @@ try:
         st.header("Unsupervised Learning")
         with st.columns([0.05, 0.95])[1]:
             st.markdown("Unsupervised Learning is a type of machine learning where the algorithm learns from unlabeled data. Unlike supervised learning,which requires labeled data to train the model, unsupervised learning finds patterns, structures, or relationships within the data itself.")
-            usl_tabs = st.tabs(['Clustering','Dimensionality Reduction','Anomaly Detection'])
+            usl_tabs = st.tabs(
+                ['Clustering', 'Dimensionality Reduction', 'Anomaly Detection'])
             with usl_tabs[0]:
                 st.header("Clustering")
                 st.markdown(
                     'Clustering is an unsupervised learning technique that groups similar data points together based on their features. The goal is to identify distinct groups (clusters) in the data without prior labels.')
-                if st.toggle("Evaluation Metrices for Clustering"):
+                usl_cl_tabs = st.tabs(['Evaluation Metrices', 'Algorithms'])
+                with usl_cl_tabs[0]:
                     st.markdown(clustering_evaluation_metrices)
-                for index, (title, value) in enumerate(USML_CLUS_MAPPER.items()):
-                    with st.expander(label=title, expanded=False):
-                        st.header(title)
-                        html_creator.create_youtube_link_button(
-                            label=title, url=value[2])
-                        with st.columns([0.6, 0.4])[0]:
-                            st.image(image=value[1])
-                        st.markdown(value[0])
+                with usl_cl_tabs[1]:
+                    for index, (title, value) in enumerate(USML_CLUS_MAPPER.items()):
+                        with st.expander(label=title, expanded=False):
+                            st.header(title)
+                            html_creator.create_youtube_link_button(
+                                label=title, url=value[2])
+                            with st.columns([0.6, 0.4])[0]:
+                                st.image(image=value[1])
+                            st.markdown(value[0])
 
             with usl_tabs[1]:
                 st.header("Dimensionality Reduction")

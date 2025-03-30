@@ -10,9 +10,9 @@ from Instructions.Machine_Learning.Unsupervised.Clustering.clus_evaluation_metri
 st.set_page_config(layout="wide")
 
 html_creator = HTMLElementCreator()
-css_file_path = "Style/main.css"
-with open(css_file_path) as css:
-    st.markdown(f"<style>{css.read()}</style", unsafe_allow_html=True)
+# css_file_path = "Style/main.css"
+# with open(css_file_path) as css:
+#     st.markdown(f"<style>{css.read()}</style", unsafe_allow_html=True)
 
 st.header("Classical Machine Learning")
 st.divider()
